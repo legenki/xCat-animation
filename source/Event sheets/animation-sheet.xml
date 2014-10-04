@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>animation-sheet</name>
+    <events>
+        <comment>this event to make animation changes every seconds</comment>
+        <event-block sid="2053322989760074">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="327738053707892" type="System" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="5199319722751188" type="playerpin">
+                    <param id="0" name="Animation">&quot;player_&quot;&amp;playerpin.check</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5926103271385587">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="3050923343099361" type="System" />
+            </conditions>
+            <actions>
+                <action id="-4" name="Set position to another object" sid="7477328384325909" type="playerpin">
+                    <param id="0" name="Object">player</param>
+                    <param id="1" name="Image point (optional)">0</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="2859905970256059" type="playerpin">
+                    <param id="0" name="Pin to">player</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>this to change the face from left to right</comment>
+        <event-block sid="7879437028228674">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="2509167029755835" type="Keyboard">
+                    <param id="0" name="Key">39 (Right arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Set mirrored" sid="1659187397056609" type="playerpin">
+                    <param id="0" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7843118358409672">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="8871694849903151" type="Keyboard">
+                    <param id="0" name="Key">37 (Left arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Set mirrored" sid="7331709748695034" type="playerpin">
+                    <param id="0" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>here is the events of the animations ^^ as we can see in event1 ( everytick it will set animation to : &quot;player_&quot; + the check variable from the playerpin.. so you just want to put the word that you can find it on edit animation </comment>
+        <comment>for example here it will be : player_idle</comment>
+        <event-block sid="5691774232718289">
+            <conditions>
+                <condition behavior="Platform" id="1" name="Compare speed" sid="8089410346299057" type="player">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Speed">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="383980439482591" type="playerpin">
+                    <param id="0" name="Instance variable">check</param>
+                    <param id="1" name="Value">&quot;idle&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>for example here it will be : player_move</comment>
+        <event-block sid="7321966367640996">
+            <conditions>
+                <condition behavior="Platform" id="1" name="Compare speed" sid="4798196956054092" type="player">
+                    <param id="0" name="Comparison">1</param>
+                    <param id="1" name="Speed">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="1851342219125333" type="playerpin">
+                    <param id="0" name="Instance variable">check</param>
+                    <param id="1" name="Value">&quot;move&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>for example here it will be : player_jump</comment>
+        <event-block sid="8294405285998001">
+            <conditions>
+                <condition behavior="Platform" id="3" name="Is jumping" sid="3523088310728416" type="player" />
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="9537117424200736" type="playerpin">
+                    <param id="0" name="Instance variable">check</param>
+                    <param id="1" name="Value">&quot;jump&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>for example here it will be : player_fall</comment>
+        <event-block sid="8034267713829139">
+            <conditions>
+                <condition behavior="Platform" id="4" name="Is falling" sid="7096299687569309" type="player" />
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="1310062828402237" type="playerpin">
+                    <param id="0" name="Instance variable">check</param>
+                    <param id="1" name="Value">&quot;fall&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

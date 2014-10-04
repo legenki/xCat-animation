@@ -1,0 +1,262 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>X-cat</name>
+    <description></description>
+    <version>0.1</version>
+    <author>Andrey Legenki</author>
+    <author-email>andylegenki@gmail.com</author-email>
+    <author-website>http://idiomland.com</author-website>
+    <app-id></app-id>
+    <unique-id>17o7fdr35762r</unique-id>
+    <saved-with-version>17800</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
+        <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>800</width>
+        <height>480</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">No</prop>
+        <prop name="Enable WebGL">Off</prop>
+        <prop name="Fullscreen in browser">Off</prop>
+        <prop name="Loader style">Nothing (not recommended)</prop>
+        <prop name="Preload sounds">No</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use iOS retina display">Yes</prop>
+    </configuration-settings>
+    <object-folder expanded="1">
+        <object-type name="wall" sid="5556512160954317">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="1850495043664761">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6595950839662527" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="playerpin" sid="2441708508602758">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="check" sid="6484714961874193" type="string" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Pin" sid="6501251868388224">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="1" name="player_idle" pingpong="0" repeatcount="1" repeatto="0" sid="1819639327934338" speed="5">
+                    <frame duration="1" hotspotX="0.554795" hotspotY="0.876289" original-source="C:\Users\Andy\Desktop\xcat-animation\idle.png">
+                        <collision-poly>
+                            <point x="0.19863" y="0.149485" />
+                            <point x="0.5" y="0.0670103" />
+                            <point x="0.876712" y="0.0927835" />
+                            <point x="0.815068" y="0.5" />
+                            <point x="0.835616" y="0.876289" />
+                            <point x="0.5" y="1" />
+                            <point x="0.116438" y="0.912371" />
+                            <point x="0.253425" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="6" loop="1" name="player_move" pingpong="0" repeatcount="1" repeatto="0" sid="7019826545426341" speed="8">
+                    <frame duration="1" hotspotX="0.554913" hotspotY="0.865591" original-source="C:\Users\Andy\Desktop\xcat-animation\move0.png">
+                        <collision-poly>
+                            <point x="0.346821" y="0.322581" />
+                            <point x="0.49711" y="0.0698925" />
+                            <point x="0.855491" y="0.134409" />
+                            <point x="0.936416" y="0.5" />
+                            <point x="0.757225" y="0.774194" />
+                            <point x="0.49711" y="0.924731" />
+                            <point x="0.138728" y="0.870968" />
+                            <point x="0.0520231" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.554913" hotspotY="0.865591" original-source="C:\Users\Andy\Desktop\xcat-animation\move1.png">
+                        <collision-poly>
+                            <point x="0.364162" y="0.33871" />
+                            <point x="0.49711" y="0.0698925" />
+                            <point x="0.867052" y="0.123656" />
+                            <point x="0.959538" y="0.5" />
+                            <point x="0.809249" y="0.822581" />
+                            <point x="0.49711" y="0.919355" />
+                            <point x="0.16185" y="0.849462" />
+                            <point x="0.0635838" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.554913" hotspotY="0.865591" original-source="C:\Users\Andy\Desktop\xcat-animation\move2.png">
+                        <collision-poly>
+                            <point x="0.346821" y="0.322581" />
+                            <point x="0.49711" y="0.0645161" />
+                            <point x="0.855491" y="0.134409" />
+                            <point x="0.942197" y="0.5" />
+                            <point x="0.791907" y="0.806452" />
+                            <point x="0.49711" y="0.913979" />
+                            <point x="0.138728" y="0.870968" />
+                            <point x="0.0404624" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.554913" hotspotY="0.865591" original-source="C:\Users\Andy\Desktop\xcat-animation\move3.png">
+                        <collision-poly>
+                            <point x="0.358382" y="0.333333" />
+                            <point x="0.49711" y="0.0537634" />
+                            <point x="0.861272" y="0.129032" />
+                            <point x="0.947977" y="0.5" />
+                            <point x="0.791907" y="0.806452" />
+                            <point x="0.49711" y="0.870968" />
+                            <point x="0.150289" y="0.860215" />
+                            <point x="0.0635838" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.554913" hotspotY="0.865591" original-source="C:\Users\Andy\Desktop\xcat-animation\move4.png">
+                        <collision-poly>
+                            <point x="0.364162" y="0.33871" />
+                            <point x="0.49711" y="0.0591398" />
+                            <point x="0.867052" y="0.123656" />
+                            <point x="0.959538" y="0.5" />
+                            <point x="0.815029" y="0.827957" />
+                            <point x="0.49711" y="0.913979" />
+                            <point x="0.150289" y="0.860215" />
+                            <point x="0.0578035" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.554913" hotspotY="0.865591" original-source="C:\Users\Andy\Desktop\xcat-animation\move5.png">
+                        <collision-poly>
+                            <point x="0.364162" y="0.33871" />
+                            <point x="0.49711" y="0.0537634" />
+                            <point x="0.872832" y="0.11828" />
+                            <point x="0.953757" y="0.5" />
+                            <point x="0.739884" y="0.758065" />
+                            <point x="0.49711" y="0.83871" />
+                            <point x="0.156069" y="0.854839" />
+                            <point x="0.0520231" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="player_jump" pingpong="0" repeatcount="1" repeatto="0" sid="4946628369836482" speed="5">
+                    <frame duration="1" hotspotX="0.543147" hotspotY="0.86631" original-source="C:\Users\Andy\Desktop\xcat-animation\jump.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.497462" y="0.181818" />
+                            <point x="0.817259" y="0.192513" />
+                            <point x="0.994924" y="0.497326" />
+                            <point x="0.908629" y="0.903743" />
+                            <point x="0.497462" y="0.882353" />
+                            <point x="0.203046" y="0.786096" />
+                            <point x="0.0203046" y="0.497326" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="player_fall" pingpong="0" repeatcount="1" repeatto="0" sid="9984186501529898" speed="5">
+                    <frame duration="1" hotspotX="0.569231" hotspotY="0.887255" original-source="C:\Users\Andy\Desktop\xcat-animation\fail.png">
+                        <collision-poly>
+                            <point x="0.106061" y="0.09375" />
+                            <point x="0.5" y="0.232143" />
+                            <point x="0.868687" y="0.116071" />
+                            <point x="0.949495" y="0.5" />
+                            <point x="0.873737" y="0.888393" />
+                            <point x="0.5" y="0.875" />
+                            <point x="0.343434" y="0.696429" />
+                            <point x="0.444444" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="player" sid="8979267520974602">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Platform" sid="2911297356280842">
+                    <behavior id="Platform" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3373442060560876" speed="5">
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.98" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Keyboard" sid="4296025733607985">
+            <plugin id="Keyboard" />
+        </object-type>
+        <object-type name="Sprite" sid="3661120138739623">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6315780962595218" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\Andy\Desktop\Untitled-2.png">
+                        <collision-poly>
+                            <point x="0.044374" y="0.0965517" />
+                            <point x="0.499208" y="0.296552" />
+                            <point x="0.81141" y="0.410345" />
+                            <point x="0.801902" y="0.5" />
+                            <point x="0.987322" y="0.972414" />
+                            <point x="0.499208" y="0.996552" />
+                            <point x="0.0126783" y="0.972414" />
+                            <point x="0.066561" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite2" sid="3129884803599442">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8145532326827385" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Andy\Desktop\conrol.png">
+                        <collision-poly>
+                            <point x="0.0197368" y="0.0625" />
+                            <point x="0.5" y="0" />
+                            <point x="0.980263" y="0.0625" />
+                            <point x="1" y="0.5" />
+                            <point x="0.980263" y="0.9375" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0197368" y="0.9375" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder expanded="1">
+        <layout>animation.xml</layout>
+    </layout-folder>
+    <event-folder expanded="1">
+        <event-sheet>animation-sheet.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Keyboard" uid="5" />
+    </global-instances>
+    <sounds-folder expanded="1" />
+    <music-folder expanded="1" />
+    <files-folder expanded="1">
+        <file-folder expanded="0" name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>
